@@ -10,12 +10,6 @@ const Navbar = () => {
     const navigate=useNavigate();
     const [menuVisibility,setMenuVisibility]=useState(false)
 
-    useEffect(()=>{
-
-      console.log("Menu visibility",menuVisibility)
-
-
-    },[menuVisibility])
 
     const logout = ()=>{
 

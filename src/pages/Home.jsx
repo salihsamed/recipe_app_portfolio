@@ -50,7 +50,6 @@ const Home = () => {
       try {
         const response=await axios.get("https://recipeapi-7ex8.onrender.com/recipes");
         setRecipes(response.data)
-        console.log("Fetched recipes",response.data);
         
       } catch (err) {
         console.error(err)
@@ -64,7 +63,6 @@ const Home = () => {
       try {
         const response=await axios.get(`https://recipeapi-7ex8.onrender.com/recipes/savedRecipes/ids/${userID}`);
         setSavedRecipes(response.data.savedRecipes)
-        console.log("Fetched saved recipes",response.data.savedRecipes);
         
       } catch (err) {
         console.error(err)
