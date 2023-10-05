@@ -12,6 +12,8 @@ const Login = () => {
         try{
             await axios.post("https://recipeapi-7ex8.onrender.com/auth/register",{username,password});
             alert("Registration completed ! Now login.")
+            setUsername("");
+            setPassword("");
         }
         catch(err){
             console.error(err);
