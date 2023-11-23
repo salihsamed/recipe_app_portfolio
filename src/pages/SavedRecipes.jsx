@@ -19,7 +19,6 @@ const SavedRecipes = () => {
           `https://recipeapi-x7x0.onrender.com/recipes/savedRecipes/${userID}`
         );
         setSavedRecipes(response.data.savedRecipes);
-        console.log("Fetched saved recipes", response.data.savedRecipes);
       } catch (err) {
         console.error(err);
       }

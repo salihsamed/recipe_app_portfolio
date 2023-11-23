@@ -14,7 +14,6 @@ const Recipe = () => {
           `https://recipeapi-x7x0.onrender.com/recipes/recipe/${recipeID}`
         );
         setRecipe(response.data);
-        console.log("Fetched recipe", response.data);
       } catch (err) {
         console.error(err);
       }
